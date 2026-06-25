@@ -12,11 +12,11 @@ class Member {
   }
 
   borrowBook(book) {
-    return this.name + "borrowed" + book.title;
+    return this.name + " borrowed " + book.title;
   }
 
   returnBook(book) {
-    return this.name + "returned" + book.title;
+    return this.name + " returned " + book.title;
   }
 }
 
@@ -59,3 +59,8 @@ console.log(shelf.addBook(b2));
 
 console.log("Books in library");
 console.log(shelf.listBooks());
+
+const m1 = new Member("sam");
+
+console.log(m1.borrowBook(b1));
+console.log(m1.returnBook(b1));
