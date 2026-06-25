@@ -12,10 +12,20 @@ class Member {
   }
 
   borrowBook(book) {
-    return this.name + "borrowed" + this.name;
+    return this.name + "borrowed" + book.title;
   }
 
   returnBook(book) {
-    return this.name + "returned" + this.book;
+    return this.name + "returned" + book.title;
+  }
+}
+
+class PremiumMember extends Member {
+  constructor(name) {
+    this.name = name;
+  }
+
+  reserveBook(book) {
+    return "Premium Member " + this.name + " has reserved " + book.title;
   }
 }
