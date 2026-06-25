@@ -56,3 +56,6 @@ let shelf = new Library();
 
 console.log(shelf.addBook(b1));
 console.log(shelf.addBook(b2));
+
+console.log("Books in library");
+console.log(shelf.listBooks());
