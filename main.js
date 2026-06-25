@@ -64,3 +64,6 @@ const m1 = new Member("sam");
 
 console.log(m1.borrowBook(b1));
 console.log(m1.returnBook(b1));
+
+const pm1 = new PremiumMember("Riya");
+console.log(pm1.reserveBook(b1));
