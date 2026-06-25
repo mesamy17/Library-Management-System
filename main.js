@@ -22,7 +22,7 @@ class Member {
 
 class PremiumMember extends Member {
   constructor(name) {
-    this.name = name;
+    super(name);
   }
 
   reserveBook(book) {
