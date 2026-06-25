@@ -48,3 +48,6 @@ class Library {
     return this.Books;
   }
 }
+
+const b1 = new Book("Java Script", "Samarth Sawant", "001");
+const b2 = new Book("Death Note", "Hikaru", "005");
