@@ -29,3 +29,22 @@ class PremiumMember extends Member {
     return "Premium Member " + this.name + " has reserved " + book.title;
   }
 }
+
+class Library {
+  constructor() {
+    this.Books = [];
+  }
+  addBook(book) {
+    this.Books.push(book);
+    return book.title + " added to library";
+  }
+
+  removeBook(isbn) {
+    this.Books = this.Books.filter((book) => book.isbn != isbn);
+    return "Removed book";
+  }
+
+  listBooks() {
+    return this.Books;
+  }
+}
