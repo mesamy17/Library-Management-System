@@ -51,3 +51,8 @@ class Library {
 
 const b1 = new Book("Java Script", "Samarth Sawant", "001");
 const b2 = new Book("Death Note", "Hikaru", "005");
+
+let shelf = new Library();
+
+console.log(shelf.addBook(b1));
+console.log(shelf.addBook(b2));
